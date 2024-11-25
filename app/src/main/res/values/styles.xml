@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="LearnXML"/>
+
+    <style name="LearnXML.TextStyle">
+        <item name="android:textSize">
+            @dimen/space_small
+        </item>
+    </style>
+
+    <style name="LearnXML.TextStyle.Title">
+        <item name="android:textSize">
+            @dimen/text_size_big
+        </item>
+        <item name="android:textColor">
+            @color/text_primary_title
+        </item>
+    </style>
+
+
+    <style name="LearnXML.TextStyle.Link">
+        <item name="android:textColor">
+            @color/textLink
+        </item>
+        <item name="android:textStyle">
+            bold
+        </item>
+
+    </style>
+
+
+
+
+</resources>
