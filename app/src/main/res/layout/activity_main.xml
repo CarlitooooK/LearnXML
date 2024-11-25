@@ -6,6 +6,17 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_loginv2"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="@dimen/space_large"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toTopOf="@id/constraintLayout">
+    </ImageView>
+
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -115,17 +126,18 @@
 
         </TextView>
 
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/passsword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/password"
                 android:layout_margin="@dimen/space_small"
-                android:maxLines="1"
                 app:layout_constraintBottom_toTopOf="@id/forgot">
-        </EditText>
+        </com.google.android.material.textfield.TextInputEditText>
 
-        <EditText
+
+
+        <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/emailID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -134,7 +146,7 @@
                 android:layout_margin="@dimen/space_small"
                 android:maxLines="1"
                 android:inputType="textEmailAddress">
-        </EditText>
+        </com.google.android.material.textfield.TextInputEditText>
 
         <TextView
                 android:layout_width="wrap_content"
@@ -148,12 +160,5 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:src="@drawable/ic_loginv2"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/constraintLayout"
-            android:layout_marginTop="30dp">
-    </ImageView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
