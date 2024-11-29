@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/LearnXML.ConstraintStyle"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/space_large"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+            android:id="@+id/viewLogin"
+            android:layout_marginTop="@dimen/space_large"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/feat_login_login">
+    </Button>
+    <Button
+            android:id="@+id/viewSignUp"
+            android:layout_marginTop="@dimen/space_large"
+            app:layout_constraintTop_toBottomOf="@id/viewLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up">
+    </Button>
+    <Button
+            android:id="@+id/viewForgotPassword"
+            android:layout_marginTop="@dimen/space_large"
+            app:layout_constraintTop_toBottomOf="@id/viewSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_password">
+    </Button>
+    <Button
+            android:id="@+id/viewResetPassword"
+            android:layout_marginTop="@dimen/space_large"
+            app:layout_constraintTop_toBottomOf="@id/viewForgotPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reset_password">
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

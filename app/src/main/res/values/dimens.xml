@@ -2,7 +2,10 @@
 <resources>
     <dimen name="space_small">14dp</dimen>
     <dimen name="space_large">24dp</dimen>
+    <dimen name="space_superlarge">60dp</dimen>
+    <dimen name="space_megalarge">80dp</dimen>
     <dimen name="text_size_big">32sp</dimen>
     <dimen name="text_size_small">15sp</dimen>
+    <dimen name="text_size_supersmall">12dp</dimen>
     <dimen name="radius_small">20dp</dimen>
 </resources>

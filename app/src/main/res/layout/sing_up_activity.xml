@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/LearnXML.ConstraintStyle"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/space_small"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/LearnXML.ConstraintStyle"
+            android:id="@+id/sing_up_constraint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="@dimen/space_large">
+
+        <TextView
+                android:id="@+id/join_us"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/LearnXML.TextStyle"
+                android:layout_marginStart="90dp"
+                app:layout_constraintEnd_toStartOf="@id/sing_up_login"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/joined_us_before">
+        </TextView>
+
+        <TextView
+                android:id="@+id/sing_up_login"
+                style="@style/LearnXML.TextStyle.Link"
+                app:layout_constraintStart_toEndOf="@id/sing_up_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="130dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="@string/feat_login_login">
+        </TextView>
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_continue"
+                style="@style/LearnXML.Widget.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="0dp"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@id/sing_up_login"
+                android:layout_marginBottom="@dimen/space_large"
+                android:text="@string/continuation">
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <TextView
+                android:id="@+id/terms"
+                style="@style/LearnXML.TextStyle.Subtiltes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_large"
+                app:layout_constraintBottom_toTopOf="@id/button_continue"
+                android:text="@string/terms">
+        </TextView>
+
+        <com.google.android.material.textfield.TextInputLayout
+                style="@style/LearnXML.Widget.TextInputLayout"
+                android:id="@+id/cellphone"
+                android:hint="@string/number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:endIconMode="clear_text"
+                android:layout_marginBottom="@dimen/space_large"
+                app:layout_constraintBottom_toTopOf="@id/terms">
+            <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:inputType="number"
+                    android:drawableStart="@drawable/ic_telephone"
+                    android:drawablePadding="@dimen/space_small"
+                    android:layout_height="wrap_content">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+            style="@style/LearnXML.Widget.TextInputLayout"
+            android:id="@+id/full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/cellphone"
+            android:hint="@string/full_name"
+            android:layout_marginBottom="@dimen/space_large"
+            app:endIconMode="clear_text">
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:drawablePadding="@dimen/space_small"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_fullname"
+                android:inputType="textPersonName">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/email_sign_up"
+                style="@style/LearnXML.Widget.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_large"
+                app:layout_constraintBottom_toTopOf="@id/full_name"
+                android:hint="@string/email_id"
+                app:endIconMode="clear_text">
+            <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_arroba"
+                    android:inputType="textEmailAddress"
+                    android:drawablePadding="@dimen/space_small">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+                android:id="@+id/sing_up_textView"
+                style="@style/LearnXML.TextStyle.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_large"
+                app:layout_constraintBottom_toTopOf="@id/email_sign_up"
+                app:layout_constraintTop_toTopOf="@id/sing_up_constraint"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/sign_up">
+        </TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:contentDescription="@null"
+            android:layout_margin="@dimen/space_large"
+            android:src="@drawable/ic_sign_up_image"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toTopOf="@id/sing_up_constraint"
+            app:layout_constraintStart_toStartOf="@id/sing_up_constraint"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/sing_up_constraint">
+
+    </ImageView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

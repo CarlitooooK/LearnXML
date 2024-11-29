@@ -3,29 +3,28 @@
     <style name="LearnXML"/>
 
     <style name="LearnXML.TextStyle">
-        <item name="android:textSize">
-            @dimen/space_small
-        </item>
+        <item name="android:textSize">@dimen/space_small</item>
     </style>
 
     <style name="LearnXML.TextStyle.Title">
-        <item name="android:textSize">
-            @dimen/text_size_big
-        </item>
-        <item name="android:textColor">
-            @color/text_primary_title
-        </item>
+        <item name="android:textSize">@dimen/text_size_big</item>
+        <item name="android:textColor">@color/text_primary_title</item>
+        <item name="android:fontFamily">@font/madani</item>
     </style>
 
 
     <style name="LearnXML.TextStyle.Link">
-        <item name="android:textColor">
-            @color/textLink
-        </item>
-        <item name="android:textStyle">
-            bold
-        </item>
+        <item name="android:textColor">@color/textLink</item>
+        <item name="android:textStyle">bold</item>
 
+    </style>
+
+    <style name="LearnXML.TextStyle.Subtiltes">
+        <item name="android:textSize"> @dimen/text_size_supersmall</item>
+    </style>
+    <style name="LearnXML.ConstraintStyle">
+        <item name="backgroundColor">@color/white</item>
+        <item name="backgroundTint">@color/white</item>
     </style>
 
 
