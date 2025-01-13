@@ -24,6 +24,7 @@
         <activity android:name=".Login_Activity" />
         <activity android:name=".Sign_Up_Activity" />
         <activity android:name=".reset_password" />
+        <activity android:name=".FeedActivity"/>
         <activity android:name=".forgot_password_Activity" />
     </application>
 

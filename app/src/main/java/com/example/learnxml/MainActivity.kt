@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         val btnView2 = findViewById<Button>(R.id.viewSignUp)
         val btnView3 = findViewById<Button>(R.id.viewForgotPassword)
         val btnView4 = findViewById<Button>(R.id.viewResetPassword)
+        val btnView5 = findViewById<Button>(R.id.feedActivity)
 
         // Listeners para cambiar de actividad
         btnView1.setOnClickListener {
@@ -38,6 +39,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, reset_password::class.java))
         }
 
+        btnView5.setOnClickListener {
+            startActivity(Intent(this, FeedActivity::class.java))
+        }
     }
 
 }
